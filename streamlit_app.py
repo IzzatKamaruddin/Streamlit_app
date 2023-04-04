@@ -7,20 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1hzjyI2asWcWBM9sKbRVaQtoMUYGjRzWQ
 """
 
-!pip install streamlit
-
-!pip install pyngrok
-
-from pyngrok import ngrok
-
-ngrok.set_auth_token("2NwbRUZ1K5KQjGGABjBnRff6og5_7WCaz1MwW7fNKG3GRZPAL")
-
-!nohup streamlit run Streamlit_app.py --server.port 80 &
-url = ngrok.connect(port='80')
-print(url)
-
-!pip install streamlit-folium
-
 import streamlit as st
 import pandas as pd
 import folium
