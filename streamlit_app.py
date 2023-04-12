@@ -3,6 +3,7 @@
 
 import streamlit as st
 import pandas as pd
+import geopandas as gp
 
 
 APP_TITLE = 'Mobile Broadband Quarter 4 Report'
